@@ -26,10 +26,10 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "fsample.database.windows.net";
-    $user = "hari";
-    $pass = "Najwa8931";
-    $db = "fsampledb";
+    $host = "<Nama server database Anda>";
+    $user = "<Nama admin database Anda>";
+    $pass = "<Password admin database Anda>";
+    $db = "<Nama database Anda>";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
@@ -45,7 +45,7 @@
             $job = $_POST['job'];
             $date = date("Y-m-d");
             // Insert data
-            $sql_insert = "INSERT INTO User (name, email, job, date) 
+            $sql_insert = "INSERT INTO Registration (name, email, job, date) 
                         VALUES (?,?,?,?)";
             $stmt = $conn->prepare($sql_insert);
             $stmt->bindValue(1, $name);
