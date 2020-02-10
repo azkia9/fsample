@@ -1,1 +1,2 @@
-# fsample
+# Submission 1 - Menjadi Azure Cloud Developer
+Source code untuk submission #1 kelas Azure dapat menggunakan project aplikasi web Anda sendiri atau menggunakan contoh project sederhana pada tautan ini.https://github.com/dicodingacademy/a83-macd-labs/tree/submission1
